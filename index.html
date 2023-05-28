@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio Web de Steven Paredes Castillo">
+    <title>Portafolio Web - Steven Paredes Castillo</title>
+
+    <meta name="author" content="Steven Paredes Castillo">
+    <meta name="keywords" content="portafolio, web, desarrollo, proyectos, habilidades, contacto">
+
+    <!-- Agregando Font Awesome para utilizar iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Agregando estilos personalizados -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <a href="#" class="boton-subir">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Steven</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#acerca-de">Acerca de</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#habilidades">Habilidades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#proyectos">Proyectos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="sobre-mi">
+            <div class="container">
+                <div class="imagen">
+                    <img class="sobre-mi-imagen" src="/img/perfil.jpg" alt="Foto de Steven Paredes Castillo">
+                </div>
+                <div class="texto">
+                    <h2>Sobre mí</h2>
+                    <p>Soy un desarrollador con habilidades en desarrollo web y programación, incluyendo HTML, CSS,
+                        Python, C#, Git, Github, metodología Scrum y MySQL. Aunque soy un desarrollador junior en
+                        JavaScript, tengo experiencia práctica en el desarrollo de software, participando en proyectos
+                        en el ITLA durante los últimos 4 años y en proyectos personales que implican el uso de Python,
+                        SQLite 3, C#, HTML, CSS, JavaScript y MySQL. 🚀 <br><br>Actualmente no tengo experiencia laboral
+                        formal en el campo de la tecnología, he participado en proyectos que simulan situaciones de
+                        trabajo en el área de desarrollo de software.<br> <br>Algunos de mis logros incluyen obtener el
+                        nivel
+                        junior en JavaScript y crear mi propia página web. Estoy emocionado por seguir adquiriendo
+                        experiencia y habilidades en el campo de la tecnología y estoy seguro de que tengo un gran
+                        potencial para crecer. 💪</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="habilidades">
+            <div class="container">
+                <h2>Habilidades</h2>
+                <div class="habilidades">
+                    <div class="habilidades-columna">
+                        <div class="habilidad">
+                            <h3>HTML</h3>
+                            <p>Lenguaje de marcado utilizado para crear páginas web.</p>
+                            <div class="barra-progreso" style="--habilidad-progreso: 80%;">
+                                <div class="progreso html" id="progresoHtml"></div>
+                                <span>8/10</span>
+                            </div>
+                        </div>
+                        <div class="habilidad">
+                            <h3>CSS</h3>
+                            <p>Lenguaje de estilo utilizado para definir la apariencia de las páginas web.</p>
+                            <div class="barra-progreso" style="--habilidad-progreso: 80%;">
+                                <div class="progreso css" id="progresoCss"></div>
+                                <span>8/10</span>
+                            </div>
+                        </div>
+                        <div class="habilidad">
+                            <h3>JavaScript</h3>
+                            <p>Lenguaje de programación utilizado para crear interactividad en las páginas web.</p>
+                            <div class="barra-progreso" style="--habilidad-progreso: 80%;">
+                                <div class="progreso js" id="progresoJs"></div>
+                                <span>8/10</span>
+                            </div>
+                        </div>
+                        <div class="habilidad">
+                            <h3>MySQL</h3>
+                            <p>Sistema de gestión de bases de datos relacionales utilizado para almacenar y recuperar
+                                información.</p>
+                            <div class="barra-progreso" style="--habilidad-progreso: 20%;">
+                                <div class="progreso mysql" id="progresoMySql"></div>
+                                <span>2/10</span>
+                            </div>
+                        </div>
+                        <div class="habilidad">
+                            <h3>C#</h3>
+                            <p>Lenguaje de programación desarrollado por Microsoft utilizado para crear aplicaciones de
+                                escritorio y web.</p>
+                            <div class="barra-progreso" style="--habilidad-progreso: 40%;">
+                                <div class="progreso csharp" id="progresoCsharp"></div>
+                                <span>4/10</span>
+                            </div>
+                        </div>
+                        <div class="habilidad">
+                            <h3>SQL</h3>
+                            <p>Administra y consulta bases de datos relacionales para obtener información de manera
+                                eficiente.</p>
+                            <div class="barra-progreso" style="--habilidad-progreso: 60%;">
+                                <div class="progreso sql" id="progresoSql"></div>
+                                <span>6/10</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="habilidades-columna">
+                        <div class="habilidad">
+                            <h3>Git</h3>
+                            <p>Sistema de control de versiones utilizado para mantener el registro de cambios en el
+                                código fuente de un proyecto.</p>
+                            <div class="barra-progreso" style="--habilidad-progreso: 100%;">
+                                <div class="progreso git" id="progresoGit"></div>
+                                <span>10/10</span>
+                            </div>
+                        </div>
+                        <div class="habilidad">
+                            <h3>Github</h3>
+                            <p>Plataforma web que permite alojar y revisar código, gestionar proyectos y colaborar con
+                                otros desarrolladores.</p>
+                            <div class="barra-progreso" style="--habilidad-progreso: 70%;">
+                                <div class="progreso github" id="progresoGitHub"></div>
+                                <span>7/10</span>
+                            </div>
+                        </div>
+                        <div class="habilidad">
+                            <h3>Scrum</h3>
+                            <p>Metodología ágil utilizada en el desarrollo de software para mejorar la eficiencia y la
+                                calidad del trabajo en equipo.</p>
+                            <div class="barra-progreso" style="--habilidad-progreso: 80%;">
+                                <div class="progreso scrum" id="progresoScrum"></div>
+                                <span>8/10</span>
+                            </div>
+                        </div>
+                        <div class="habilidad">
+                            <h3>Python</h3>
+                            <p>Lenguaje de programación interpretado, de alto nivel y generalista utilizado para
+                                diversas aplicaciones, incluyendo el desarrollo web y científico.</p>
+                            <div class="barra-progreso" style="--habilidad-progreso: 20%;">
+                                <div class="progreso python" id="progresoPython"></div>
+                                <span>2/10</span>
+                            </div>
+                        </div>
+                        <div class="habilidad">
+                            <h3>Selenium</h3>
+                            <p>Framework para pruebas automatizadas de aplicaciones web. Permite simular la interacción
+                                del usuario para validar la funcionalidad de la aplicación.</p>
+                            <div class="barra-progreso" style="--habilidad-progreso: 40%;">
+                                <div class="progreso selenium" id="progresoSelenium"></div>
+                                <span>4/10</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="proyectos">
+            <div class="container">
+                <h2>Mis proyectos</h2>
+                <div class="proyecto">
+                    <a href="https://github.com/StevenP-2019-8372/listado-de-nombres" target="_blank">
+                        <img src="/img/p-1.png" alt="Preview de proyecto">
+                        <h3>Listado de Nombres</h3>
+                    </a>
+                    <p>El proyecto "Listado de Nombres" es una página web diseñada para mostrar mis habilidades y
+                        capacidades en el desarrollo web utilizando HTML y CSS. </p>
+                </div>
+                <div class="proyecto">
+                    <a href="https://github.com/StevenP-2019-8372/CRUD-de-Alimentos" target="_blank">
+                        <img src="/img/p-2.png" alt="Preview de proyecto">
+                        <h3>CRUD de Alimentos</h3>
+                    </a>
+                    <p>El proyecto "CRUD de Alimentos" es una página web que he desarrollado utilizando HTML, JavaScript
+                        y CSS. Con este proyecto, puedo demostrar mis habilidades en el diseño y desarrollo web,
+                        especialmente en la implementación de un CRUD (Crear, Leer, Actualizar y Eliminar) para
+                        gestionar una lista de alimentos y sus calorías.</p>
+                </div>
+                <div class="proyecto">
+                    <a href="https://github.com/StevenP-2019-8372/Venta-de-Autos" target="_blank">
+                        <img src="/img/p-3.png" alt="Preview de proyecto">
+                        <h3>Venta de Autos</h3>
+                    </a>
+                    <p>El proyecto "Venta de Autos" es una tienda web sencilla que he creado para demostrar mis
+                        habilidades en el diseño y desarrollo web. Esta tienda ficticia ofrece la funcionalidad de
+                        comprar autos y está desarrollada utilizando HTML, CSS y JavaScript.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <div class="container">
+                <h2>Contacto</h2>
+                <div class="informacion-contacto">
+                    <div class="telefono">
+                        <i class="fas fa-phone"></i>
+                        <p>Teléfono: <a href="tel:+18293567076">829-356-7076</a></p>
+                    </div>
+                    <div class="correo">
+                        <i class="fas fa-envelope"></i>
+                        <p>Correo electrónico: <a
+                                href="mailto:stevenparedesc2003@gmail.com">stevenparedesc2003@gmail.com</a></p>
+                    </div>
+                    <div class="linkedin">
+                        <i class="fab fa-linkedin"></i>
+                        <p>LinkedIn: <a href="https://www.linkedin.com/in/stevenp03/"
+                                target="_blank">LinkedIn.com/in/stevenp03</a></p>
+                    </div>
+                    <div class="github">
+                        <i class="fab fa-github"></i>
+                        <p>GitHub: <a href="https://github.com/StevenP-2019-8372"
+                                target="_blank">github.com/StevenP-2019-8372</a></p>
+                    </div>
+                </div>
+                <form class="formulario" id="formulario-contacto">
+                    <h3>Envíame un mensaje</h3>
+                    <div class="campo">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="campo">
+                        <label for="correo">Correo electrónico:</label>
+                        <input type="email" id="correo" name="correo" required>
+                    </div>
+                    <div class="campo">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" required></textarea>
+                    </div>
+                    <div class="boton">
+                        <button id="button" type="submit">Enviar</button>
+                    </div>
+                </form>
+                <script type="text/javascript"
+                    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+                <script type="text/javascript">
+                    emailjs.init('tsZlftReIbFMvaOvJ')
+                </script>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Derechos de autor © 2023 Steven Paredes Castillo. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Agregando scripts personalizados -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

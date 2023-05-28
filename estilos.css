@@ -1,0 +1,432 @@
+/* Botón de scroll hacia arriba */
+.boton-subir {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #575757;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 20px;
+    z-index: 999;
+    text-decoration: none;
+}
+
+.boton-subir:hover {
+    background-color: #818181;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Estilos Generales */
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    color: #eee;
+    background-color: #333;
+}
+
+a {
+    color: #eee;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #aaa;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Estilos para pantallas*/
+
+@media (max-width: 1200px) {
+    /* Estilos para pantallas grandes */
+
+    .container {
+        max-width: 960px;
+    }
+
+    /* Estilos de la Sección de Habilidades */
+    .habilidades {
+        flex-wrap: wrap;
+    }
+
+    .habilidades-columna {
+        flex-basis: 100%;
+    }
+}
+/* Estilos del Encabezado */
+
+header {
+    background-color: #222;
+    color: #eee;
+    padding: 20px 0;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #eee;
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: #eee;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #aaa;
+}
+
+.boton-menu {
+    display: none;
+    font-size: 24px;
+    color: #eee;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 20px;
+        padding: 20px 0;
+        background-color: #222;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 999;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    .boton-menu {
+        display: block;
+    }
+
+    .menu.mostrar ul {
+        display: flex;
+    }
+}
+
+/* Estilos del Contenido */
+
+section {
+    padding: 50px 0;
+}
+
+section h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #eee;
+}
+
+section p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+/*sobre mi*/
+
+.sobre-mi-imagen {
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+/* Estilos del Pie de Página */
+
+footer {
+    background-color: #222;
+    color: #eee;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px; /* Aumenta el tamaño de fuente a 16px o el valor deseado */
+    text-align: center; /* Centra el texto */
+}
+
+footer a {
+    color: #eee;
+    text-decoration: underline;
+}
+
+/* Estilos de la Sección de Habilidades */
+.habilidades {
+    display: flex;
+    justify-content: space-between;
+}
+
+.habilidades-columna {
+    flex-basis: calc(50% - 20px);
+}
+
+.habilidad {
+    margin: 10px 0;
+    padding: 20px;
+    background-color: #444;
+    text-align: center;
+    position: relative;
+    flex-basis: 100%;
+}
+
+.habilidad h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #eee;
+}
+
+.habilidad p {
+    margin-bottom: 20px;
+    color: #eee;
+}
+
+.habilidad .barra-progreso {
+    position: relative;
+    height: 10px;
+    background-color: #555;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.habilidad .progreso {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: var(--habilidad-progreso);
+
+    border-radius: 5px;
+    transition: width 0.5s ease;
+}
+
+.habilidad .barra-progreso span {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #eee;
+    font-size: 18px;
+}
+
+.habilidad:hover .progreso {
+    width: 0;
+}
+#progresoHtml {
+    background-color: rgb(227, 76, 38); /* Color característico de HTML */
+}
+#progresoCss {
+    background-color: rgb(41, 101, 241); /* Color característico de CSS */
+}
+#progresoSelenium {
+    background-color: rgb(76, 160, 57); /* Color característico de Selenium */
+}
+#progresoJs {
+    background-color: rgb(247, 223, 30); /* Color característico de JavaScript */
+}
+#progresoMySql {
+    background-color: rgb(34, 47, 90); /* Color característico de MySQL */
+}
+#progresoCsharp {
+    background-color: rgb(152, 31, 65); /* Color característico de C# */
+}
+#progresoSql {
+    background-color: rgb(185, 20, 38); /* Color característico de SQL */
+}
+#progresoGit {
+    background-color: rgb(238, 238, 238); /* Color característico de Git */
+}
+#progresoGitHub {
+    background-color: rgb(41, 41, 41); /* Color característico de GitHub */
+}
+#progresoScrum {
+    background-color: rgb(0, 123, 167); /* Color característico de Scrum */
+}
+#progresoPython {
+    background-color: rgb(52, 119, 176); /* Color característico de Python */
+}
+
+/* Estilos de la Sección de Proyectos */
+
+.proyectos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.proyecto {
+    flex-basis: calc(50% - 20px);
+    margin: 10px;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-bottom: 2.5%;
+    background-color: #444;
+}
+
+.proyecto img {
+    margin-top: 2.5%;
+    max-width: 100%;
+    margin-bottom: 2.5%;
+    height: auto;
+    border-radius: 0 25% 0 25%;
+}
+
+.proyecto .descripcion {
+    padding: 5%;
+}
+
+.proyecto h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #eee;
+}
+
+.proyecto p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #eee;
+}
+
+/* Estilos de la Sección de Contacto */
+
+.contacto {
+    display: flex;
+    flex-wrap: wrap;
+}
+#contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 0;
+}
+#contacto h2 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 30px;
+    color: #eee;
+}
+.informacion-contacto {
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.informacion-contacto div {
+    margin-bottom: 10px;
+}
+
+.informacion-contacto i {
+    margin-right: 10px;
+    color: #aeaeae;
+}
+
+.informacion-contacto p {
+    font-size: 16px;
+    margin: 0;
+    color: #aeaeae;
+}
+.formulario {
+    background-color: #444;
+    padding: 20px;
+}
+
+.formulario h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #b2b1b1;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario label {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #b2b1b1;
+}
+
+
+
+.formulario input,
+.formulario textarea {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #eee;
+    color: #333;
+    width: 100%;
+}
+
+.formulario textarea {
+    height: 100px;
+}
+
+.formulario button {
+    background-color: #222;
+    color: #eee;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formulario button:hover {
+    background-color: #555;
+}
