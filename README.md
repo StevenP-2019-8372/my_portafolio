@@ -34,3 +34,7 @@ Creador: Steven Paredes Castillo<br>
 Correo electrónico: stevenparedesc2003@gmail.com<br>
 Si deseas comunicarte conmigo, puedes utilizar el formulario de contacto en la página o enviarme un correo electrónico directamente a stevenparedesc2003@gmail.com.
 ¡Espero que disfrutes explorando mi portafolio tanto como yo disfruté creándolo! Si tienes alguna pregunta o comentario, no dudes en contactarme. ¡Estoy emocionado de recibir tus comentarios!
+
+---
+
+Esta documentación proporciona una descripción completa del proyecto "My Portafolio" desarrollado en HTML, JavaScript y CSS. Si tienes alguna otra pregunta o necesitas más detalles, no dudes en contactarme por correo electrónico.
