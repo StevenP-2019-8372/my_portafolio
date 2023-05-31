@@ -307,12 +307,14 @@ footer a {
 .habilidad p {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.5s ease;
+    opacity: 0;
+    transition: max-height 0.2s ease, opacity 0.5s ease;
 }
 
 .habilidad:hover p {
     max-height: 30%;
     margin-bottom: 20px;
+    opacity: 1;
 }
 
 .habilidad img {
