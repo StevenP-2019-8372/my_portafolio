@@ -21,24 +21,35 @@ botonSubir.addEventListener("click", () => {
 
 /*enviar formulario*/
 
-const btn = document.getElementById('button');
+const btn = document.getElementById("button");
 
-document.getElementById('formulario-contacto')
-.addEventListener('submit', function(event) {
-  event.preventDefault();
+document
+  .getElementById("formulario-contacto")
+  .addEventListener("submit", function (event) {
+    event.preventDefault();
 
-  btn.value = 'Sending...';
+    btn.value = "Sending...";
 
-  const serviceID = 'default_service';
-  const templateID = 'template_s30uh9f';
+    const serviceID = "default_service";
+    const templateID = "template_s30uh9f";
 
-  emailjs.sendForm(serviceID, templateID, this)
-    .then(() => {
-      btn.value = 'Send Email';
-      alert('Enviado correctamente!');
-    }, (err) => {
-      btn.value = 'Send Email';
-      alert(JSON.stringify(err));
-    });
-});
+    // Obtén una referencia al elemento de entrada
+    var inputName = document.getElementById("nombre");
+    var inputEmail = document.getElementById("correo");
+    var inputMensaje = document.getElementById("mensaje");
 
+    emailjs.sendForm(serviceID, templateID, this).then(
+      () => {
+        btn.value = "Send Email";
+        alert("Enviado correctamente!");
+        // Limpia el contenido del campo de entrada
+        inputName.value = "";
+        inputEmail.value="";
+        inputMensaje.value="";
+      },
+      (err) => {
+        btn.value = "Send Email";
+        alert(JSON.stringify(err));
+      }
+    );
+  });

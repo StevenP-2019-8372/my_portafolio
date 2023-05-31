@@ -362,7 +362,7 @@ footer a {
     bottom: -30px;
     left: 0;
     width: 100%;
-    color: #eee;
+    color: var(--habilidad-color);
     font-size: 18px;
     text-align: center;
 }
